@@ -42,21 +42,21 @@ Before using this code, ensure you have the following prerequisites:
 
 - Use the extractor_SimpleType function to extract data from a Simple Type XSD file:
 
-    # Example for extracting simple types
+# Example for extracting simple types
     xsd_file = 'your_xsd_file.xsd'
     csv_outputName = 'output_simple_types.csv'
     df = extractor_SimpleType(xsd_file, csv_outputName)
 
 - Use the extractor_complexType function to extract data from a Complex Type XSD file:
 
-    # Example for extracting complex types
+# Example for extracting complex types
     xsd_file = 'your_xsd_file.xsd'
     csv_outputName = 'output_complex_types.csv'
     df = extractor_complexType(xsd_file, csv_outputName)
 
 - Use the FormatercomplexTtype function to format data by replacing "[]" with None in a CSV file:
 
-    # Example for formatting complex type data
+# Example for formatting complex type data
     file_name = 'output_complex_types.csv'
     TBremove = '[]'
     formatted_df = FormatercomplexTtype(file_name, TBremove)
